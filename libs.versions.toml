@@ -1,0 +1,44 @@
+[versions]
+android-gradle-plugin = "8.1.0"
+ktx = "1.12.0"
+lifecycle-ktx = "2.6.2"
+android-activity = "1.7.2"
+kotlin-android = "1.8.10"
+android-library = "8.1.0"
+android-dynamic-feature = "8.1.0"
+google-ksp = "1.8.10-1.0.9"
+glide = "1.0.0-beta01"
+dagger-hilt = "2.44"
+compose-bom = "2023.09.02"
+compose-bom-test = "2023.09.02"
+compose-ui = "1.5.2"
+compose-material = "1.1.2"
+junit-test = "4.13.2"
+android-test-junit = "1.1.5"
+android-espresso = "3.5.1"
+
+[libraries]
+android-activity = { group = "androidx.activity", name = "activity-compose", version.ref = "android-activity" }
+android-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose-bom" }
+android-compose-bom-test = { group = "androidx.compose", name = "compose-bom", version.ref = "compose-bom-test" }
+android-compose-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "compose-material" }
+android-compose-ui = { group = "androidx.compose.ui", name = "ui", version.ref = "compose-ui" }
+android-compose-test = { group = "androidx.compose.ui", name = "ui-test-junit4", version.ref = "compose-ui" }
+android-compose-graphics = { group = "androidx.compose.ui", name = "ui-graphics", version.ref = "compose-ui" }
+android-compose-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview", version.ref = "compose-ui" }
+android-junit = { group = "androidx.test.ext", name = "junit", version.ref = "android-test-junit" }
+android-lifecycle = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle-ktx" }
+android-espresso = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "android-espresso" }
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "ktx" }
+dagger-hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "dagger-hilt" }
+dagger-hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "dagger-hilt" }
+glide-compose = { group = "com.github.bumptech.glide", name = "compose", version.ref = "glide" }
+junit = { group = "junit", name = "junit", version.ref = "junit-test" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "android-gradle-plugin" }
+google-ksp = { id = "com.google.devtools.ksp", version.ref = "google-ksp" }
+android-kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin-android" }
+android-library = { id = "com.android.library", version.ref = "android-library" }
+android-dynamic-feature = { id = "com.android.dynamic-feature", version.ref = "android-dynamic-feature" }
+dagger-hilt = { id = "com.google.dagger.hilt.android", version.ref = "dagger-hilt" }
