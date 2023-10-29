@@ -1,21 +1,24 @@
 [versions]
-android-gradle-plugin = "8.1.0"
+gradle-plugin = "8.1.2"
+android-gradle-plugin = "8.1.2"
 ktx = "1.12.0"
 lifecycle-ktx = "2.6.2"
-android-activity = "1.7.2"
-kotlin-android = "1.8.10"
+android-activity = "1.8.0"
+kotlin-android = "1.9.10"
+kotlin-plugin = "1.9.10"
 android-library = "8.1.0"
 android-dynamic-feature = "8.1.0"
-google-ksp = "1.8.10-1.0.9"
+google-ksp = "1.9.10-1.0.13"
 glide = "1.0.0-beta01"
-dagger-hilt = "2.44"
-compose-bom = "2023.09.02"
-compose-bom-test = "2023.09.02"
-compose-ui = "1.5.2"
+dagger-hilt = "2.48"
+compose-bom = "2023.10.01"
+compose-bom-test = "2023.10.01"
+compose-ui = "1.5.4"
 compose-material = "1.1.2"
 junit-test = "4.13.2"
 android-test-junit = "1.1.5"
 android-espresso = "3.5.1"
+
 
 [libraries]
 android-activity = { group = "androidx.activity", name = "activity-compose", version.ref = "android-activity" }
@@ -34,6 +37,8 @@ dagger-hilt-android = { group = "com.google.dagger", name = "hilt-android", vers
 dagger-hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "dagger-hilt" }
 glide-compose = { group = "com.github.bumptech.glide", name = "compose", version.ref = "glide" }
 junit = { group = "junit", name = "junit", version.ref = "junit-test" }
+kotlin-gradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin-plugin" }
+gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle-plugin" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "android-gradle-plugin" }
