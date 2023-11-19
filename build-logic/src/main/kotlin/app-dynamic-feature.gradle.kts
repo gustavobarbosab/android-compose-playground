@@ -8,7 +8,7 @@ import dependencies.libs
 import dependencies.testJunit
 
 plugins {
-    id("com.android.library")
+    id("com.android.dynamic-feature")
     kotlin("android")
 }
 
