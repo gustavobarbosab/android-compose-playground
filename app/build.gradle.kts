@@ -65,6 +65,8 @@ dependencies {
     implementation(libs.android.compose.material3)
 
     implementation(libs.dagger.hilt.android)
+    implementation(libs.navigation.fragment.ktx)
+    implementation(libs.navigation.ui.ktx)
     ksp(libs.dagger.hilt.compiler)
 
     testImplementation(libs.junit)

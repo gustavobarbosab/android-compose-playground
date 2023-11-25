@@ -16,3 +16,7 @@ internal fun VersionCatalog.findVersionOrThrow(name: String) =
     findVersion(name)
         .orElseThrow { NoSuchElementException("Version $name not found in version catalog") }
         .requiredVersion
+
+internal fun VersionCatalog.findPluginOrThrow(alias: String) =
+    findPlugin(alias)
+        .orElseThrow { NoSuchElementException("Plugin $name not found in version catalog") }

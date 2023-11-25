@@ -1,4 +1,4 @@
-package com.github.gustavobarbosab.movietime.ui.theme
+package com.github.gustavobarbosab.ui.theme
 
 import android.app.Activity
 import android.os.Build
@@ -30,7 +30,6 @@ private val LightColorScheme = lightColorScheme(
 @Composable
 fun MovieTimeTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    // Dynamic color is available on Android 12+
     dynamicColor: Boolean = true,
     content: @Composable () -> Unit
 ) {

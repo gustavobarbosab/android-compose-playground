@@ -1,4 +1,4 @@
-package com.github.gustavobarbosab.movietime.ui.theme
+package com.github.gustavobarbosab.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
