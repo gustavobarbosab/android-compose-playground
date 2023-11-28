@@ -1,5 +1,5 @@
 package com.github.gustavobarbosab.movietime
 
-import androidx.activity.ComponentActivity
+import androidx.fragment.app.FragmentActivity
 
-class MainActivity : ComponentActivity(R.layout.main_activity)
+class MainActivity : FragmentActivity(R.layout.main_activity)

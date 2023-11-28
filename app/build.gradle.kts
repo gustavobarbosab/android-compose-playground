@@ -12,6 +12,7 @@ android {
     defaultConfig {
         applicationId = "com.github.gustavobarbosab.movietime"
         minSdk = 23
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
