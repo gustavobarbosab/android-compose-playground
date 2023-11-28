@@ -1,5 +1,5 @@
-import dependencies.androidActivity
 import dependencies.androidComposeMaterial
+import dependencies.androidFragment
 import dependencies.androidLifecycle
 import dependencies.androidTestEspresso
 import dependencies.androidTestJunit
@@ -38,7 +38,7 @@ android {
 dependencies {
     implementation(libs.libCoreKtx)
     implementation(libs.androidLifecycle)
-    implementation(libs.androidActivity)
+    implementation(libs.androidFragment)
     implementation(libs.androidComposeMaterial)
     testImplementation(libs.testJunit)
     androidTestImplementation(libs.androidTestJunit)

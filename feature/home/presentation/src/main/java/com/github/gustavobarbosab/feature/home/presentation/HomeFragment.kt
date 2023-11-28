@@ -14,11 +14,9 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.platform.ViewCompositionStrategy
 import androidx.fragment.app.Fragment
-import androidx.navigation.NavController
+import com.github.gustavobarbosab.ui.createComposeView
 import com.github.gustavobarbosab.ui.theme.MovieTimeTheme
 
 class HomeFragment : Fragment() {
@@ -26,24 +24,19 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View = ComposeView(requireContext()).apply {
-        setViewCompositionStrategy(ViewCompositionStrategy.DisposeOnViewTreeLifecycleDestroyed)
-        setContent {
-            MovieTimeTheme {
-                Scaffold(
-                    modifier = Modifier.fillMaxSize(),
-                    bottomBar = { MoviesBottomNavigation(null) },
-                    content = {
-                        HomeScreen(Modifier.padding(it))
-                    }
-                )
-            }
+    ): View = createComposeView {
+        MovieTimeTheme {
+            Scaffold(
+                modifier = Modifier.fillMaxSize(),
+                bottomBar = { MoviesBottomNavigation() },
+                content = { HomeScreen(Modifier.padding(it)) }
+            )
         }
     }
 }
 
 @Composable
-fun MoviesBottomNavigation(navController: NavController?) {
+fun MoviesBottomNavigation() {
     val context = LocalContext.current
     NavigationBar {
         NavItem.items.forEachIndexed { index, navItem ->

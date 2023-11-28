@@ -1,7 +1,9 @@
 package com.github.gustavobarbosab.feature.home.presentation
 
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.outlined.Home
+import androidx.compose.material.icons.outlined.List
+import androidx.compose.material.icons.outlined.Person
 import androidx.compose.ui.graphics.vector.ImageVector
 
 sealed class NavItem(
@@ -11,19 +13,19 @@ sealed class NavItem(
 ) {
     data object Home : NavItem(
         "home",
-        Icons.Default.Home,
+        Icons.Outlined.Home,
         "Home"
     )
 
     data object Favorites : NavItem(
-        "favorites",
-        Icons.Default.Home,
-        "Favorites"
+        "list",
+        Icons.Outlined.List,
+        "List"
     )
 
     data object Profile : NavItem(
         "profile",
-        Icons.Default.Home,
+        Icons.Outlined.Person,
         "Profile"
     )
 

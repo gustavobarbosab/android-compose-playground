@@ -33,8 +33,13 @@ internal val VersionCatalog.daggerHilt: Provider<MinimalExternalModuleDependency
 
 internal val VersionCatalog.androidComposeMaterial: Provider<MinimalExternalModuleDependency>
     get() = findLibraryOrThrow("android-compose-material3")
+
+internal val VersionCatalog.androidFragment: Provider<MinimalExternalModuleDependency>
+    get() = findLibraryOrThrow("fragment-android")
+
 internal val VersionCatalog.androidLifecycle: Provider<MinimalExternalModuleDependency>
     get() = findLibraryOrThrow("android-lifecycle")
+
 internal val VersionCatalog.libCoreKtx: Provider<MinimalExternalModuleDependency>
     get() = findLibraryOrThrow("core-ktx")
 

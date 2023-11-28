@@ -55,7 +55,11 @@ android {
 }
 
 dependencies {
+    // Features
+    implementation(project(":feature:home:presentation"))
+
     implementation(libs.core.ktx)
+    implementation(libs.fragment.android)
     implementation(libs.android.lifecycle)
     implementation(libs.android.activity)
     implementation(platform(libs.android.compose.bom))
@@ -64,9 +68,12 @@ dependencies {
     implementation(libs.android.compose.preview)
     implementation(libs.android.compose.material3)
 
+    // Navigation (these dependencies need to use API to make the configurations available to dynamic features)
+    api(libs.navigation.fragment.ktx)
+    api(libs.navigation.ui.ktx)
+    api(libs.navigation.dynamic)
+
     implementation(libs.dagger.hilt.android)
-    implementation(libs.navigation.fragment.ktx)
-    implementation(libs.navigation.ui.ktx)
     ksp(libs.dagger.hilt.compiler)
 
     testImplementation(libs.junit)
