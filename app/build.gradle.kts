@@ -56,6 +56,9 @@ android {
 }
 
 dependencies {
+    implementation(project(":common:ui"))
+    implementation(project(":common:navrouter"))
+
     // Features
     implementation(project(":feature:home:presentation"))
 
@@ -73,6 +76,7 @@ dependencies {
     api(libs.navigation.fragment.ktx)
     api(libs.navigation.ui.ktx)
     api(libs.navigation.dynamic)
+    implementation(libs.navigation.compose)
 
     implementation(libs.dagger.hilt.android)
     ksp(libs.dagger.hilt.compiler)
