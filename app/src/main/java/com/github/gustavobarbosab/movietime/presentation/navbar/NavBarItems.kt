@@ -1,4 +1,4 @@
-package com.github.gustavobarbosab.movietime
+package com.github.gustavobarbosab.movietime.presentation.navbar
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Home
@@ -10,24 +10,27 @@ import com.github.gustavobarbosab.navrouter.routes.HomeRoute
 import com.github.gustavobarbosab.navrouter.routes.ProfileRoute
 import com.github.gustavobarbosab.navrouter.routes.Route
 
-sealed class NavigationItems(
+sealed class NavBarItems(
     val route: Route,
     val icon: ImageVector,
     val label: String
 ) {
-    data object Home : NavigationItems(
+    val routeName
+        get() = route.name
+
+    data object Home : NavBarItems(
         HomeRoute,
         Icons.Outlined.Home,
         "Home"
     )
 
-    data object Favorites : NavigationItems(
+    data object Favorites : NavBarItems(
         FavoritesRoute,
         Icons.Outlined.List,
         "Favorites"
     )
 
-    data object Profile : NavigationItems(
+    data object Profile : NavBarItems(
         ProfileRoute,
         Icons.Outlined.Person,
         "Profile"
