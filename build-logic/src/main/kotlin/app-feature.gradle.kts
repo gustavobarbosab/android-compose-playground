@@ -8,6 +8,7 @@ import dependencies.androidTestJunit
 import dependencies.fragmentKtx
 import dependencies.libCoreKtx
 import dependencies.libs
+import dependencies.lifecycleViewModelCompose
 import dependencies.navigationFragmentKtx
 import dependencies.navigationUi
 import dependencies.testJunit
@@ -51,6 +52,7 @@ dependencies {
     implementation(libs.androidComposePreview)
     implementation(platform(libs.androidComposeBom))
     implementation(libs.androidComposeUi)
+    implementation(libs.lifecycleViewModelCompose)
 
     implementation(libs.navigationUi)
     implementation(libs.navigationFragmentKtx)

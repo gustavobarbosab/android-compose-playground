@@ -51,3 +51,6 @@ internal val VersionCatalog.androidTestJunit: Provider<MinimalExternalModuleDepe
 
 internal val VersionCatalog.androidTestEspresso: Provider<MinimalExternalModuleDependency>
     get() = findLibraryOrThrow("android-espresso")
+
+internal val VersionCatalog.lifecycleViewModelCompose: Provider<MinimalExternalModuleDependency>
+    get() = findLibraryOrThrow("android-lifecycle-viewmodel-compose")
