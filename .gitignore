@@ -38,6 +38,13 @@ local.properties
 .idea/scopes/scope_settings.xml
 .idea/vcs.xml
 .idea/caches/
+.idea/navEditor.xml
+.idea/shelf/
+.idea/assetWizardSettings.xml
+.idea/jarRepositories.xml
+.idea/deploymentTargetDropDown.xml
+.idea/migrations.xml
+
 build/
 /captures
 .externalNativeBuild
@@ -50,14 +57,7 @@ build/
 .Trashes
 ehthumbs.db
 Thumbs.db
-/.idea/navEditor.xml
-/.idea/shelf/
-/.idea/assetWizardSettings.xml
-/.idea/jarRepositories.xml
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
+
 /app.apks
 /app/*.aab
 
